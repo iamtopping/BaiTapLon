@@ -49,7 +49,7 @@ namespace BaiTapLon.Controllers
                 acc.Password = encry.PasswordEncryption(acc.Password);
                 db.Accounts.Add(acc);
                 db.SaveChanges();
-                return RedirectToAction("Login", "Account");
+                return RedirectToAction("Login", "Accounts");
             }
             return View(acc);
         }

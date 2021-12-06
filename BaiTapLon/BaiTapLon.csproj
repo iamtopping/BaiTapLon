@@ -132,6 +132,7 @@
     <Compile Include="Controllers\HoaDonsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KhachHangsController.cs" />
+    <Compile Include="Controllers\NhaCungCapsController.cs" />
     <Compile Include="Controllers\SanPhamsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -148,11 +149,20 @@
     <Compile Include="Migrations\202112021556062_Create_Account.Designer.cs">
       <DependentUpon>202112021556062_Create_Account.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112061635161_Create_NhaCungCap.cs" />
+    <Compile Include="Migrations\202112061635161_Create_NhaCungCap.Designer.cs">
+      <DependentUpon>202112061635161_Create_NhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112061649467_add_chitiet_HoaDon.cs" />
+    <Compile Include="Migrations\202112061649467_add_chitiet_HoaDon.Designer.cs">
+      <DependentUpon>202112061649467_add_chitiet_HoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Encryption.cs" />
     <Compile Include="Models\HoaDon.cs" />
     <Compile Include="Models\KhachHang.cs" />
+    <Compile Include="Models\NhaCungCap.cs" />
     <Compile Include="Models\QLBHDbContext.cs" />
     <Compile Include="Models\SanPham.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -213,6 +223,11 @@
     <Content Include="Views\SanPhams\Index.cshtml" />
     <Content Include="Views\Accounts\Register.cshtml" />
     <Content Include="Views\Accounts\Login.cshtml" />
+    <Content Include="Views\NhaCungCaps\Create.cshtml" />
+    <Content Include="Views\NhaCungCaps\Delete.cshtml" />
+    <Content Include="Views\NhaCungCaps\Details.cshtml" />
+    <Content Include="Views\NhaCungCaps\Edit.cshtml" />
+    <Content Include="Views\NhaCungCaps\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -239,6 +254,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112021556062_Create_Account.resx">
       <DependentUpon>202112021556062_Create_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112061635161_Create_NhaCungCap.resx">
+      <DependentUpon>202112061635161_Create_NhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112061649467_add_chitiet_HoaDon.resx">
+      <DependentUpon>202112061649467_add_chitiet_HoaDon.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

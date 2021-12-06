@@ -15,6 +15,10 @@ namespace BaiTapLon.Models
         public string KhachHangID { get; set; }
         [Display(Name = "Ngày tạo")]
         public DateTime NgayTao { get; set; }
+        public string Chitiet { get; set; }
         public KhachHang KhachHang { get; set; }
+        
+
+
     }
 }
